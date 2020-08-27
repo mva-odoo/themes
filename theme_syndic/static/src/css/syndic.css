@@ -1,18 +1,43 @@
 .navbar {
-    background-image: -webkit-linear-gradient(#00A2FF,#2fa4e7 60%,#1d9ce5);
-    background-image: linear-gradient(#00A2FF,#00A2FF 60%,#00A2FF);
+    background-color: rgb(151, 167, 211) !important;
+    /* background-image: -webkit-linear-gradient(#00A2FF,#2fa4e7 60%,#1d9ce5);
+    background-image: linear-gradient(#00A2FF,#00A2FF 60%,#00A2FF); */
     background-repeat: no-repeat;
     color: white;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff54b4eb', endColorstr='#ff1d9ce5', GradientType=0);
-    border-bottom: 1px solid #178acc;
+    /* border-bottom: 1px solid #178acc; */
     filter: none;
     -webkit-box-shadow: 0 1px 10px rgba(0,0,0,.1);
     box-shadow: 0 1px 10px rgba(0,0,0,.1);
 }
+.o_footer{
+    background-color: rgb(151, 167, 211) !important;
+}
+@media(min-width: 768px){
+    .navbar .container{
+        height:80px;
+    }
+}
 
-
+.inner-pre-header{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1140px;
+    width: 100%;
+}
+.pre-header{
+    height: 30px;
+    text-align: right;
+    background: #F9F9F9;
+}
 
 .navbar .navbar-nav>li>a, .navbar-brand {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav > li > a {
     color: white;
 }
 
@@ -20,9 +45,21 @@
     /* display : none; */
 }
 
-/* .oe_topbar_item oe_topbar_compose_full_email {
-  display : none;
+header .navbar-brand.logo{
+    position: absolute !important;
+    background-color: white;
+    top:-30px;
+    z-index: 1;
+    padding:20px;
+    height: 80; 
+    display: inline-flex;
+    margin: 0;
+   /* align-items: center; */
 }
-.odoo .oe_topbar_item.oe_topbar_compose_full_email {
-	display: none;
-} */
+
+header .navbar-brand.logo img{
+    height: 7rem;
+}
+.navbar-toggler{
+    margin-left: 100px;
+}

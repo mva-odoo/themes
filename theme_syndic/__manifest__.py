@@ -10,6 +10,7 @@
     'depends': ['website', 'website_theme_install'],
     'data': [
         'views/assets.xml',
+        'pages/theme.xml',
     ],
     'images': [
         'static/description/cover.png',
